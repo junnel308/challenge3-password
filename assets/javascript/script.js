@@ -1,5 +1,7 @@
 
 var generateBtn = document.querySelector("#generate");
+var optionSelect = document.querySelector("#includeLowercase");
+
 
 // Write password to the #password input
 /*
@@ -17,13 +19,10 @@ generateBtn.addEventListener("click", writePassword);
 
 
 generateBtn.addEventListener("click", function(event) {
-  event.preventDefault;
   document.getElementById('prompt1').classList.toggle ('active');
 });
 
-function changedata(parameter) {
-  if(parameter == 1) {
-    document.getElementById('prompt2').classList.opacity('0');
 
-  }
-}
+optionSelect.addEventListener("click", function(event) {
+  document.getElementById('prompt2').classList.toggle ('active');
+});

@@ -74,42 +74,35 @@ header {
   clear: both;
 }
 
-#prompt1 {
+#prompt1{
   display: none;
 }
 
 #prompt1.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-left: 2rem;
-  opacity: 1;
-  background-size: 10px;
+  display: block;
+  padding-left: 7rem;
+  background-size: 25px;
 }
 
 #label1 {
   padding: 2rem;
+
 }
 
-
-
 #prompt2 {
-  position:absolute;
-  top: 0;
-  left: 0;
-  height: 80%;
-  width: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-left: 2rem;
-  opacity: 0;
+  display: none;
+}
+
+#prompt2.active {
+  display: block;
+  padding-left: 7rem;
+  background-size: 10px;
 }
 
 .option-box {
+  display: inline-block;
   padding: 10px;
+  
 }
 
 .btn {
