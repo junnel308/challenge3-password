@@ -52,7 +52,6 @@ header {
 }
 
 .card-body {
-  position: relative;
   min-height: 100px;
 }
 
@@ -74,35 +73,36 @@ header {
   clear: both;
 }
 
-#prompt1{
+#footer-prompt {
   display: none;
 }
 
-#prompt1.active {
+
+#footer-prompt.active.active {
   display: block;
-  padding-left: 7rem;
-  background-size: 25px;
 }
 
-#label1 {
-  padding: 2rem;
-
-}
-
-#prompt2 {
-  display: none;
-}
-
-#prompt2.active {
-  display: block;
-  padding-left: 7rem;
-  background-size: 10px;
+.prompt {
+  padding: 15px;
 }
 
 .option-box {
-  display: inline-block;
-  padding: 10px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  float: right;
+  margin-right: 10rem;
+  background-color: #c0c7cf;
+}
+
+#includeCharacters {
+  padding-left: 7px;
+  margin-right: 8.75rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {

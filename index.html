@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div id="choice-selection" class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
@@ -25,23 +25,44 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           >
-        </textarea>
+          </textarea>
         </div>
 
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
 
-        <div id="prompt1">
-          <label for="includeLowercase" id="label1">Do you want to include a lowercase?</label>
-          <input type="checkbox" class="option-box" id="includeLowercase">
-        </checkbox>
+        <div id="footer-prompt">
+          <div class="prompt">
+            <label for="includeLowercase">Do you want to include lowercase letters?
+              <input type="checkbox" class="option-box" id="includeLowercase"></input>
+            </label>
+          </div>
+
+        <div class="prompt">
+          <label for="includeUppercase">Do you want to include uppercase letters?
+            <input type="checkbox" class="option-box" id="includeUppercase"></input>
+        </label>
         </div>
 
-        <div id="prompt2">
-          <label for="includeUppercase" id="label1">Do you want to include a uppercase?</label>
-          <input type="checkbox" class="option-box" id="includeUppercase">
-        </input>
+        <div class="prompt">
+          <label for="includeNumbers">Do you want to include numbers?
+            <input type="checkbox" class="option-box" id="includeNumbers"></input>
+        </label>
+        </div>
+
+        <div class="prompt">
+          <label for="includeSpecialCharacters">Do you want to include special characters?
+            <input type="checkbox" class="option-box" id="includeSpecialCharacters"></input>
+        </label>
+        </div>
+
+        <div class="prompt">
+          <label for="includeCharacters">How many characters do you want to include?
+            <input type="number" max="128" min="8" class="option-box" id="includeCharacters"></input>
+        </label>
+        </div>
+
         </div>
 
       </div>
