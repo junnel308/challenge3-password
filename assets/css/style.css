@@ -30,6 +30,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -51,6 +52,7 @@ header {
 }
 
 .card-body {
+  position: relative;
   min-height: 100px;
 }
 
@@ -72,6 +74,44 @@ header {
   clear: both;
 }
 
+#prompt1 {
+  display: none;
+}
+
+#prompt1.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 2rem;
+  opacity: 1;
+  background-size: 10px;
+}
+
+#label1 {
+  padding: 2rem;
+}
+
+
+
+#prompt2 {
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 2rem;
+  opacity: 0;
+}
+
+.option-box {
+  padding: 10px;
+}
+
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -88,7 +128,13 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
+.btn:hover {
+  background-color: #FFFFFF66;
+  color: black;
+  border-style: solid;
+}
+
+button  {
   cursor: default;
   background: #c0c7cf;
 }
@@ -135,3 +181,9 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
+
+
+
+
+
