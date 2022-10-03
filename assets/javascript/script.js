@@ -28,10 +28,10 @@ while (true) {
   passLength =  prompt("How many characters would you like to include? (Minimum of 8 character and Maximum of 128)");
   if(passLength >= 8 && passLength <= 128) {
     if(window.confirm("Is the character length" + " " + passLength + " " + "ok?")) {
-        alert("Confirmed!");
+        alert(passLength + " " + "characters added");
         break;
       } else {
-        alert("Choose a different number! (Number of characters must be minimum of 8 and no more than 128 maximum)");
+        alert("Please choose a different number (Number of characters must be minimum of 8 and no more than 128 maximum)");
       } 
     } else {
         alert("Number of characters must be minimum of 8 and no more than 128 maximum.");
@@ -41,23 +41,23 @@ while (true) {
 while (true) {
   choice1 = prompt("Would you like to include lowercase letters?");
     if (choice1 === "yes") {
-      if(window.confirm("Press ok to confirm! otherwise press cancel")){
+      if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to NOT add lowercase")){
         charLowercase = "abcdefghijklmnopqrstuvwxyz";
-        alert("Added!");
+        alert("Lowercase characters added!");
         break;
       } else {
         charLowercase = "";
-        alert("Not Added!");
+        alert("Lowercase characters will NOT be added!");
         break;
       }
     } else if (choice1 === "no") {
-      if(window.confirm("Press ok to confirm! otherwise press cancel")){
+      if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to add lowercase")){
         charLowercase = "";
-        alert("Not Added!");
+        alert("Lowercase characters will NOT be added!");
         break;
       } else {
         charLowercase = "abcdefghijklmnopqrstuvwxyz";
-        alert("Added!");
+        alert("Lowercase characters added!");
         break;
       }
     } else  {
@@ -68,23 +68,23 @@ while (true) {
 while (true) {
   choice2 = prompt("Would you like to include uppercase letters?");
     if (choice2 === "yes") {
-      if(window.confirm("Press ok to confirm! otherwise press cancel")){
+      if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to NOT add uppercase")){
         charUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        alert("Added!");
+        alert("Uppercase characters added!");
         break;
       } else {
         charUppercase = "";
-        alert("Not Added!");
+        alert("Uppercase will will NOT be added!");
         break;
       }
     } else if (choice2 === "no") {
-      if(window.confirm("Press ok to confirm! otherwise press cancel")){
+      if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to add uppercase")){
         charUppercase = "";
-        alert("Not Added!");
+        alert("Uppercase characters will NOT be added!");
         break;
       } else {
         charUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        alert("Added!");
+        alert("Uppercase characters added!");
         break;
       }
     } else  {
@@ -95,23 +95,23 @@ while (true) {
 while (true) {
    choice3 = prompt("Would you like to include numbers?");
     if (choice3 === "yes") {
-      if(window.confirm("Press ok to confirm! otherwise press cancel")){
+      if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to NOT add numbers")){
         charNumbers = "0123456789";
-        alert("Added!");
+        alert("Numbers added!");
         break;
       } else {
         charNumbers = "";
-        alert("Not Added!");
+        alert("Numbers will NOT be added!");
         break;
       }
     } else if (choice3 === "no") {
-      if(window.confirm("Press ok to confirm! otherwise press cancel")){
+      if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to add numbers")){
         charNumbers = "";
-        alert("Not Added!");
+        alert("Numbers will NOT be added!");
         break;
       } else {
         charNumbers = "0123456789";
-        alert("Added!");
+        alert("Numbers will be added!");
         break;
       }
     } else {
@@ -122,30 +122,30 @@ while (true) {
 while (true) {
   choice4 = prompt("Would you like to include special characters?");
     if (choice4 === "yes") {
-      if(window.confirm("Press ok to confirm! otherwise press cancel")){
+      if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to NOT add special characters")){
         charSpecialCharacters = "'!#$%&()*+,-./:;<=>?@[]^_`{|}~'";
-        alert("Added!");
+        alert("Special Characters added!");
         break;
       } else {
         charSpecialCharacters = "";
-        alert("Not Added!");
+        alert("Special Characters will NOT be added!");
         break;
       }
     } else if (choice4 === "no") {
-      if(window.confirm("Press ok to confirm! otherwise press cancel")){
+      if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to add special characters")){
         charSpecialCharacters = "";
-        alert("Not Added!");
+        alert("Special Characters will NOT be Added!");
         break;
       } else {
         charSpecialCharacters = "'!#$%&()*+,-./:;<=>?@[]^_`{|}~'";
-        alert("Added!");
+        alert("Special Characters added!");
         break;
       }
     } else {
       alert("Please input 'yes' or 'no'. Try Again!");
     }
   }
-  
+
     var userChoiceCharacter =''.concat (charLowercase, charUppercase, charNumbers, charSpecialCharacters);
 
     var generatedPass = "";
