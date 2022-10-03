@@ -23,7 +23,6 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-
 while (true) {
   passLength =  prompt("How many characters would you like to include? (Minimum of 8 character and Maximum of 128)");
   if(passLength >= 8 && passLength <= 128) {
@@ -31,7 +30,7 @@ while (true) {
         alert(passLength + " " + "characters added");
         break;
       } else {
-        alert("Please choose a different number (Number of characters must be minimum of 8 and no more than 128 maximum)");
+        alert("Please choose a different number   (Number of characters must be minimum of 8 and no more than 128 maximum)");
       } 
     } else {
         alert("Number of characters must be minimum of 8 and no more than 128 maximum.");
@@ -39,8 +38,8 @@ while (true) {
   }
 
 while (true) {
-  choice1 = prompt("Would you like to include lowercase letters?");
-    if (choice1 === "yes") {
+  choice1 = prompt("Would you like to include lowercase letters?   ( ' y/n ' )");
+    if (choice1 === "y") {
       if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to NOT add lowercase")){
         charLowercase = "abcdefghijklmnopqrstuvwxyz";
         alert("Lowercase characters added!");
@@ -50,7 +49,7 @@ while (true) {
         alert("Lowercase characters will NOT be added!");
         break;
       }
-    } else if (choice1 === "no") {
+    } else if (choice1 === "n") {
       if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to add lowercase")){
         charLowercase = "";
         alert("Lowercase characters will NOT be added!");
@@ -61,13 +60,13 @@ while (true) {
         break;
       }
     } else  {
-        alert("Please input 'yes' or 'no'. Try Again!");
+        alert("Please input 'y' or 'n'. Try Again!");
     }
   }
 
 while (true) {
-  choice2 = prompt("Would you like to include uppercase letters?");
-    if (choice2 === "yes") {
+  choice2 = prompt("Would you like to include uppercase letters?   ( ' y/n ' )");
+    if (choice2 === "y") {
       if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to NOT add uppercase")){
         charUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         alert("Uppercase characters added!");
@@ -77,7 +76,7 @@ while (true) {
         alert("Uppercase will will NOT be added!");
         break;
       }
-    } else if (choice2 === "no") {
+    } else if (choice2 === "n") {
       if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to add uppercase")){
         charUppercase = "";
         alert("Uppercase characters will NOT be added!");
@@ -88,13 +87,13 @@ while (true) {
         break;
       }
     } else  {
-      alert("Please input 'yes' or 'no'. Try Again!");
+      alert("Please input 'y' or 'n'. Try Again!");
     }
   }
 
 while (true) {
-   choice3 = prompt("Would you like to include numbers?");
-    if (choice3 === "yes") {
+   choice3 = prompt("Would you like to include numbers?   ( ' y/n ' )");
+    if (choice3 === "y") {
       if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to NOT add numbers")){
         charNumbers = "0123456789";
         alert("Numbers added!");
@@ -104,7 +103,7 @@ while (true) {
         alert("Numbers will NOT be added!");
         break;
       }
-    } else if (choice3 === "no") {
+    } else if (choice3 === "n") {
       if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to add numbers")){
         charNumbers = "";
         alert("Numbers will NOT be added!");
@@ -115,13 +114,13 @@ while (true) {
         break;
       }
     } else {
-        alert("Please input 'yes' or 'no'. Try Again!");
+        alert("Please input 'y' or 'n'. Try Again!");
     }
   }
 
 while (true) {
-  choice4 = prompt("Would you like to include special characters?");
-    if (choice4 === "yes") {
+  choice4 = prompt("Would you like to include special characters?   ( ' y/n ' )");
+    if (choice4 === "y") {
       if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to NOT add special characters")){
         charSpecialCharacters = "'!#$%&()*+,-./:;<=>?@[]^_`{|}~'";
         alert("Special Characters added!");
@@ -131,7 +130,7 @@ while (true) {
         alert("Special Characters will NOT be added!");
         break;
       }
-    } else if (choice4 === "no") {
+    } else if (choice4 === "n") {
       if(window.confirm("Press 'Ok' to confirm! otherwise press 'Cancel' to add special characters")){
         charSpecialCharacters = "";
         alert("Special Characters will NOT be Added!");
@@ -141,10 +140,17 @@ while (true) {
         alert("Special Characters added!");
         break;
       }
-    } else {
-      alert("Please input 'yes' or 'no'. Try Again!");
+    } else { 
+      alert("Please input 'y' or 'n'. Try Again!");
     }
   }
+
+    var max_count = 10;
+    if(charLowercase + charUppercase + charNumbers + charSpecialCharacters === "") {
+      alert("Must include at least 1 criteria. Please click 'Generate Password' and Try Again!");
+      if(--max_count > 0)
+      generatePassword();
+    }
 
     var userChoiceCharacter =''.concat (charLowercase, charUppercase, charNumbers, charSpecialCharacters);
 

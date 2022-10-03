@@ -4,7 +4,7 @@
 
 This website contains an interactive elements that asks the user series of prompts
 whether to include lowercase, uppercase, number, special characters and amount of
-characters that wants to be included. In each prompt, gives the user the opportunity to confirm their responses, or change their mind about adding the element. This also provides the opportunity to re-prompt the question to the user if the input is incorrect or input random keys accidentally. A password will display and replaces "Your Secure Password" placeholder after answering each prompt. 
+characters that they want to be include. In each prompt, gives the opportunity to confirm criteria they want to add, or change their mind about adding the criteria. This also provides the opportunity to re-prompt the question to the user if the input is incorrect or input random keys accidentally. Another element added is when the user choose not to include at least 1 criteria, it will re-prompt to the beginning of the question when generate button is first clicked. A password will display and replaces "Your Secure Password" placeholder after answering each prompt. 
 
 
 ## Usage
