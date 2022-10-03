@@ -73,38 +73,6 @@ header {
   clear: both;
 }
 
-#footer-prompt {
-  display: none;
-}
-
-
-#footer-prompt.active.active {
-  display: block;
-}
-
-.prompt {
-  padding: 15px;
-}
-
-.option-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  float: right;
-  margin-right: 10rem;
-  background-color: #c0c7cf;
-}
-
-#includeCharacters {
-  padding-left: 7px;
-  margin-right: 8.75rem;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
