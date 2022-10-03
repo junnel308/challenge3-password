@@ -116,7 +116,7 @@ function generatePassword() {
     } else {
       alert("Please input 'yes' or 'no'. Try Again!");
     }
-    
+
     var userChoiceCharacter = (charLowercase, charUppercase, charNumbers, charSpecialCharacters);
 
     var generatedPass = "";
