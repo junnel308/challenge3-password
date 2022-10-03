@@ -34,8 +34,8 @@ function generatePassword() {
   let choice1 = prompt("Would you like to include lowercase letters?");
     if (choice1 === "yes") {
       if(window.confirm("Press ok to confirm! otherwise press cancel")){
-      charLowercase = "abcdefghijklmnopqrstuvwxyz";
-      alert("Added!");
+        charLowercase = "abcdefghijklmnopqrstuvwxyz";
+        alert("Added!");
       } else {
         charLowercase = "";
         alert("Not Added!");
@@ -49,7 +49,7 @@ function generatePassword() {
         alert("Added!");
       }
     } else  {
-      alert("Please input 'yes' or 'no'. Try Again!");
+        alert("Please input 'yes' or 'no'. Try Again!");
     }
 
   let choice2 = prompt("Would you like to include uppercase letters?");
@@ -117,7 +117,7 @@ function generatePassword() {
       alert("Please input 'yes' or 'no'. Try Again!");
     }
 
-    var userChoiceCharacter = (charLowercase, charUppercase, charNumbers, charSpecialCharacters);
+    var userChoiceCharacter =''.concat (charLowercase, charUppercase, charNumbers, charSpecialCharacters);
 
     var generatedPass = "";
 
