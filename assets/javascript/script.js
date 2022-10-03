@@ -147,7 +147,7 @@ while (true) {
 
     var max_count = 10;
     if(charLowercase + charUppercase + charNumbers + charSpecialCharacters === "") {
-      alert("Must include at least 1 criteria. Please click 'Generate Password' and Try Again!");
+      alert("Must include at least 1 criteria. You will be re-prompted to the first question.");
       if(--max_count > 0)
       generatePassword();
     }
