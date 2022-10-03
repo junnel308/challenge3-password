@@ -1,6 +1,6 @@
 # MakeUrPASS 1.0
 
- ## Description
+## Description
 
 This website contains an interactive elements that asks the user series of prompts
 whether to include lowercase, uppercase, number, special characters and amount of
